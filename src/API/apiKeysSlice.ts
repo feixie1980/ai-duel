@@ -118,6 +118,7 @@ export const { addAPIKey, removeAPIKey, updateAPIKey, setError } =
 // Selectors
 export const selectAPIKeys = (state: { apiKeys: APIKeysState }) =>
   state.apiKeys.keys;
+
 export const selectAPIKeyByService =
   (service: ServiceType) => (state: { apiKeys: APIKeysState }) => {
     const key = state.apiKeys.keys.find((k) => k.service === service);
@@ -125,10 +126,7 @@ export const selectAPIKeyByService =
 
     try {
       const decryptedKey = decryptKey(key.encryptedKey);
-      return {
-        service: key.service,
-        key: decryptedKey,
-      };
+      return decryptedKey;
     } catch (error) {
       console.error('Failed to decrypt API key:', error);
       return null;

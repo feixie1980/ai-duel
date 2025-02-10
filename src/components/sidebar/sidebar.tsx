@@ -1,6 +1,7 @@
 import { Toolbar } from 'radix-ui';
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 import styled from 'styled-components';
+import { APISettingsManager } from '../apiSettingsManager';
 
 const SidebarContainer = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ const SidebarContainer = styled.div`
   justify-content: center;
   width: 240px;
   padding: 24px 16px;
-  border-inline: 1px solid var(--color-neutral-200);
+  border-inline: 1px solid var(--gray-5);
 `;
 
 const ToolsContainer = styled(Toolbar.Root)`
@@ -35,13 +36,17 @@ const BigButton = styled(Toolbar.Button)`
 `;
 
 function Sidebar(): ReactElement {
-  const openAPISettingManager = () => {};
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   return (
     <SidebarContainer>
       <ToolsContainer>
-        <BigButton onClick={openAPISettingManager}>Settings</BigButton>
+        <BigButton onClick={() => setIsSettingsOpen(true)}>Settings</BigButton>
       </ToolsContainer>
+      <APISettingsManager
+        open={isSettingsOpen}
+        onOpenChange={setIsSettingsOpen}
+      />
     </SidebarContainer>
   );
 }
