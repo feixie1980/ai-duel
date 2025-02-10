@@ -1,4 +1,4 @@
-import { Toolbar } from 'radix-ui';
+import { Button } from '@radix-ui/themes';
 import { ReactElement, useState } from 'react';
 import styled from 'styled-components';
 import { APISettingsManager } from '../apiSettingsManager';
@@ -12,7 +12,7 @@ const SidebarContainer = styled.div`
   border-inline: 1px solid var(--gray-5);
 `;
 
-const ToolsContainer = styled(Toolbar.Root)`
+const ToolsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
@@ -21,7 +21,7 @@ const ToolsContainer = styled(Toolbar.Root)`
   padding: 10px 14px;
 `;
 
-const BigButton = styled(Toolbar.Button)`
+const BigButton = styled(Button)`
   width: 100%;
   background: none;
   border: none;
