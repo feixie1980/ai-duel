@@ -1,20 +1,18 @@
-import { useState } from 'react';
-import './App.css';
 import styled from 'styled-components';
+import './App.css';
+import Sidebar from './components/sidebar/sidebar';
 
-const StyledH1 = styled.h1`
-  color: red;
+const AppContainer = styled.div`
+  flex: 1;
+  display: flex;
 `;
 
 function App() {
-  const [message] = useState('Hello World');
-
   return (
-    <>
-      <div>
-        <StyledH1>{message}</StyledH1>
-      </div>
-    </>
+    <AppContainer>
+      <Sidebar />
+      <div> Main Content </div>
+    </AppContainer>
   );
 }
 
