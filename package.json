@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feixie1980/coding-ai-chat.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -14,7 +18,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "release": "semantic-release",
+    "release-dry": "semantic-release -d"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.2",
@@ -32,6 +38,11 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
     "@eslint/js": "^9.19.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "@storybook/addon-essentials": "^8.5.3",
     "@storybook/addon-interactions": "^8.5.3",
     "@storybook/addon-onboarding": "^8.5.3",
@@ -48,6 +59,7 @@
     "@types/styled-components": "^5.1.34",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "@vitest/ui": "^3.0.5",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
@@ -55,6 +67,7 @@
     "globals": "^15.14.0",
     "jsdom": "^26.0.0",
     "prettier": "^3.5.0",
+    "semantic-release": "^24.2.2",
     "storybook": "^8.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
