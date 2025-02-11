@@ -2,6 +2,7 @@ import { ChatMessage } from '../../API/conversationsSlice';
 import { Flex } from '@radix-ui/themes';
 import { UserMessage } from './UserMessage';
 import styled from 'styled-components';
+import { BotMessage } from './BotMessage';
 
 const Container = styled(Flex)`
   width: 100%;
@@ -17,13 +18,13 @@ export function ConversationPane(props: ConversationPaneProps) {
   const { messages } = props;
 
   return (
-    <Container direction="row">
+    <Container direction="column" gap="var(--space-4)">
       {messages &&
         messages.map((message) => {
           if (message.from === 'user') {
             return <UserMessage message={message} />;
           }
-          return <div>{message.content}</div>;
+          return <BotMessage message={message} />;
         })}
     </Container>
   );

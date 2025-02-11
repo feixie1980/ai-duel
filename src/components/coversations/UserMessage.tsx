@@ -3,7 +3,8 @@ import { ChatMessage } from '../../API/conversationsSlice';
 import styled from 'styled-components';
 
 const UserMessageBox = styled(Box)`
-  background-color: var(--accent-1);
+  align-self: flex-end;
+  background-color: var(--gray-2);
   padding: 12px;
   border-radius: 8px;
 `;

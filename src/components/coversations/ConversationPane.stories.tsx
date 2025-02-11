@@ -1,20 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ConversationPane } from './CoversationPane';
-import styled, { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    height: 100vh;
-    overflow: scroll;
-  }
-`;
+import styled from 'styled-components';
 
 const StoryContainer = styled.div`
   width: 500px;
   height: 300px;
   overflow: scroll;
-  border: 1px solid lightgray;
-  background-color: var(--accent-1);
+  // border: 1px solid lightgray;
 `;
 
 const meta = {
@@ -27,7 +19,6 @@ const meta = {
   decorators: [
     (Story) => (
       <>
-        <GlobalStyle />
         <StoryContainer>
           <Story />
         </StoryContainer>
@@ -56,7 +47,7 @@ export const SingleUserMessage: Story = {
   },
 };
 
-export const Message: Story = {
+export const TwoMessages: Story = {
   args: {
     messages: [
       {
@@ -68,6 +59,49 @@ export const Message: Story = {
       {
         id: '2',
         content: 'hi, I am a LLM bot!',
+        from: 'llm',
+        status: 'completed',
+      },
+    ],
+  },
+};
+
+export const MultipleMessages: Story = {
+  args: {
+    messages: [
+      {
+        id: '1',
+        content: 'hi, I am a human!',
+        from: 'user',
+        status: 'completed',
+      },
+      {
+        id: '2',
+        content: 'hi, I am a LLM bot!',
+        from: 'llm',
+        status: 'completed',
+      },
+      {
+        id: '3',
+        content: 'How is your day?',
+        from: 'user',
+        status: 'completed',
+      },
+      {
+        id: '4',
+        content: 'It is a rainy day in the LLM world.',
+        from: 'llm',
+        status: 'completed',
+      },
+      {
+        id: '5',
+        content: 'How can it rain?  It is not a real world.',
+        from: 'user',
+        status: 'completed',
+      },
+      {
+        id: '6',
+        content: 'It is realy to me!',
         from: 'llm',
         status: 'completed',
       },
