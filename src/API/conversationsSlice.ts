@@ -25,20 +25,20 @@ const saveToStorage = (conversations: Conversation[]): void => {
   }
 };
 
-interface ChatMessage {
+export interface ChatMessage {
   id: string;
   content: string;
   from: Persona;
   status: MessageStatus;
 }
 
-interface Conversation {
+export interface Conversation {
   id: string;
   timestamp?: number;
   messages: ChatMessage[];
 }
 
-interface ConversationsState {
+export interface ConversationsState {
   conversations: Conversation[];
   currentConversationId: string | undefined;
 }

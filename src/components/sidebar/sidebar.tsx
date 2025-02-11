@@ -22,6 +22,7 @@ const ToolsContainer = styled.div`
 `;
 
 const BigButton = styled(Button)`
+  color: black;
   width: 100%;
   background: none;
   border: none;
