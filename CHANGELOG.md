@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.2...v1.0.3) (2025-02-13)
+
+
+### Bug Fixes
+
+* dist artifact passing ([61c8e37](https://github.com/feixie1980/coding-ai-chat/commit/61c8e37a629d78595d13d244328937b1382d1963))
+
 ## [1.0.2](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.1...v1.0.2) (2025-02-13)
 
 
