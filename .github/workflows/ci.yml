@@ -3,29 +3,5 @@ name: CI
 on: [push]
 
 jobs:
-  lint-and-build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run lint
-        run: pnpm run lint
-
-      - name: Run unit tests
-        run: pnpm test
-
-      - name: Build
-        run: pnpm run build
+  build:
+    uses: ./.github/workflows/build.yml
