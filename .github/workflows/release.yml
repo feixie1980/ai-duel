@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  pre-release:
     uses: ./.github/workflows/build.yml
 
   release:
-    needs: build
+    needs: pre-release
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,8 +33,12 @@ jobs:
       - name: Create Release
         run: pnpm release
 
-  deploy:
+  post-release:
     needs: release
+    uses: ./.github/workflows/build.yml
+
+  deploy:
+    needs: post-release
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -43,9 +47,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: build
-        uses: ./.github/workflows/build.yml
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
