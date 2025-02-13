@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.1...v1.0.2) (2025-02-13)
+
+
+### Bug Fixes
+
+* fix workflow ([71d5e0f](https://github.com/feixie1980/coding-ai-chat/commit/71d5e0fe3f070d3279c38b0f22243f81e395fe07))
+
 ## [1.0.1](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.0...v1.0.1) (2025-02-13)
 
 
