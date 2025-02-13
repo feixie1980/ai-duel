@@ -2,6 +2,11 @@ name: Reusable Build
 
 on:
   workflow_call:
+    inputs:
+      upload_artifact:
+        type: boolean
+        default: false
+        required: false
 
 jobs:
   build:
@@ -32,7 +37,8 @@ jobs:
         run: pnpm run build
 
       - name: Upload dist artifact
-        uses: actions/upload-artifact@v4
+        if: ${{ inputs.upload_artifact }}
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist/

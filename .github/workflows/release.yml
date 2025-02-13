@@ -36,6 +36,8 @@ jobs:
   post-release:
     needs: release
     uses: ./.github/workflows/build.yml
+    with:
+      upload_artifact: true
 
   deploy:
     needs: post-release
