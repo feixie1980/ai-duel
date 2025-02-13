@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.3...v1.0.4) (2025-02-13)
+
+
+### Bug Fixes
+
+* fixed double uploading artifact error ([4071bf9](https://github.com/feixie1980/coding-ai-chat/commit/4071bf984375cb4e13314c7212471a95ec1e3155))
+
 ## [1.0.3](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.2...v1.0.3) (2025-02-13)
 
 
