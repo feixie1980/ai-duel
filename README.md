@@ -2,7 +2,7 @@
 
 This is currently a WIP.
 
-A React-based AI vs AI frontend application built with modern web technologies.
+This is a React-based AI vs AI frontend application built with modern web technologies, showcasing many of the libraries, frameworks, and tools that have been part of the current web development and fast changing ecosystem!
 
 ## Table of Contents
 
@@ -70,6 +70,10 @@ Created files:
   src/components/user-profile/UserCard/UserCard.stories.tsx
   src/components/user-profile/UserCard/index.ts
 ```
+
+## End to end testing
+
+TBD
 
 ## Making a Release & deploying to Github Pages
 

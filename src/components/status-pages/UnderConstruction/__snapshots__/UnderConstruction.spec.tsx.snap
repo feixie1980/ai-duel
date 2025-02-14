@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UnderConstruction > renders correctly 1`] = `
+<div>
+  <div
+    class="UnderConstruction__StyledWrapper-sc-74c0038-0 dccqXF"
+  >
+    <img
+      class="UnderConstruction__UCImage-sc-74c0038-1 iihBbY"
+      src="/coding-ai-chat/src/assets/under_construction_beach.png"
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import './App.css';
-import Sidebar from './components/sidebar/sidebar';
+// import Sidebar from './components/sidebar/sidebar';
+import { UnderConstruction } from './components/status-pages/UnderConstruction';
 
 const AppContainer = styled.div`
   height: 100vh;
@@ -8,18 +9,19 @@ const AppContainer = styled.div`
   display: flex;
 `;
 
+/*
 const Content = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+*/
 
 function App() {
   return (
     <AppContainer>
-      <Sidebar />
-      <Content> Main Content </Content>
+      <UnderConstruction />
     </AppContainer>
   );
 }

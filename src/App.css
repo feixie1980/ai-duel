@@ -22,3 +22,8 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Cookie Crumble';
+  src: url('./assets/fonts/cookie_crumble.otf') format('opentype');
+}
