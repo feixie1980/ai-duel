@@ -1,11 +1,16 @@
-# Coding AI Chat
+# AI vs AI
 
-A React-based chat application built with modern web technologies.
+This is currently a WIP.
+
+A React-based AI vs AI frontend application built with modern web technologies.
 
 ## Table of Contents
 
 - [Requirements](#requirements)
 - [Scripts](#scripts)
+- [Development](#development)
+- [Component Generation](#component-generation)
+- [Making a Release](#making-a-release)
 - [Tech Stack](#tech-stack)
   - [Core Libraries](#core-libraries)
   - [Component Library](#component-library)
@@ -16,13 +21,62 @@ A React-based chat application built with modern web technologies.
   - [CI/CD with GitHub Actions](#cicd-with-github-actions)
     - [Release Process](#release-process)
     - [Deployment](#deployment)
-- [Development](#development)
-- [Making a Release](#making-a-release)
 
 ## Requirements
 
 - Node.js >= 20.x
 - pnpm >= 8.x
+
+## Development
+
+1. Clone the repository
+2. Install dependencies: `pnpm install`
+3. Start development server: `pnpm dev`
+4. Run tests: `pnpm test`
+5. Start Storybook: `pnpm storybook`
+
+## Component Generation
+
+The project uses [Plop.js](https://plopjs.com/) to generate new React components with a consistent structure. To create a new component:
+
+```bash
+pnpm run generate-component
+```
+
+This will prompt you for:
+
+1. Component name (in PascalCase, e.g., Button, UserProfile)
+2. Component group (optional, in kebab-case, e.g., form-controls, user-profile)
+
+The generator will create the following files in `src/components/[group]/[ComponentName]/`:
+
+- `ComponentName.tsx` - Main component file
+- `ComponentName.types.ts` - TypeScript interfaces and types
+- `ComponentName.spec.tsx` - Unit tests
+- `ComponentName.stories.tsx` - Storybook stories
+- `index.ts` - Barrel file for clean imports
+
+Example usage:
+
+```bash
+$ pnpm run generate-component
+? Component name (PascalCase): UserCard
+? Component group (optional, use kebab-case): user-profile
+
+Created files:
+  src/components/user-profile/UserCard/UserCard.tsx
+  src/components/user-profile/UserCard/UserCard.types.ts
+  src/components/user-profile/UserCard/UserCard.spec.tsx
+  src/components/user-profile/UserCard/UserCard.stories.tsx
+  src/components/user-profile/UserCard/index.ts
+```
+
+## Making a Release & deploying to Github Pages
+
+1. Ensure your changes are committed using conventional commit messages
+2. Push your changes to the main branch
+3. Trigger the "Manual Release" workflow in GitHub Actions
+4. The release will be created and deployed automatically to GitHub Pages
 
 ## Scripts
 
@@ -114,18 +168,3 @@ The project uses GitHub Actions for automated workflows:
 - Uses GitHub's secure deployment environment
 - Artifacts are uploaded and served through GitHub Pages
 - Preview URL is provided in the workflow output
-
-## Development
-
-1. Clone the repository
-2. Install dependencies: `pnpm install`
-3. Start development server: `pnpm dev`
-4. Run tests: `pnpm test`
-5. Start Storybook: `pnpm storybook`
-
-## Making a Release
-
-1. Ensure your changes are committed using conventional commit messages
-2. Push your changes to the main branch
-3. Trigger the "Manual Release" workflow in GitHub Actions
-4. The release will be created and deployed automatically to GitHub Pages
