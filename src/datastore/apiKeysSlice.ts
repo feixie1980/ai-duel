@@ -34,6 +34,14 @@ const decryptKey = (cipherText: string): string => {
 };
 
 // LocalStorage utilities
+
+/* 
+  In real production app, api keys should not be stored on client because of
+  security risk. We are using local storage just for convenience and testing
+  purpose, becuase I don't want to write server yet~
+*/
+
+// TODO: change this to session storage, a tiny bit more secure.
 const loadFromStorage = (): APIKey[] => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
