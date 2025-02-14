@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/feixie1980/ai-duel/compare/v1.1.0...v1.1.1) (2025-02-14)
+
+
+### Bug Fixes
+
+* fixed app name ([54ea5b1](https://github.com/feixie1980/ai-duel/commit/54ea5b1b66bd6066ab9c89192d6af88c41c4f445))
+
 # [1.1.0](https://github.com/feixie1980/ai-duel/compare/v1.0.4...v1.1.0) (2025-02-14)
 
 
