@@ -1,11 +1,11 @@
 {
-  "name": "coding-ai-chat",
+  "name": "ai-duel",
   "private": true,
   "version": "1.0.4",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/feixie1980/coding-ai-chat.git"
+    "url": "https://github.com/feixie1980/ai-duel.git"
   },
   "scripts": {
     "generate-component": "plop",
