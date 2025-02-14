@@ -10,7 +10,7 @@ exports[`UnderConstruction > renders correctly 1`] = `
     </h1>
     <img
       class="UnderConstruction__UCImage-sc-835800ff-1 eOhRsx"
-      src="/coding-ai-chat/src/assets/under_construction_beach.png"
+      src="/ai-duel/src/assets/under_construction_beach.png"
     />
   </div>
 </div>

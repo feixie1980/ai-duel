@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react-swc';
 // https://vite.dev/config/
 export default defineVitestConfig({
   ...defineViteConfig({
-    base: '/coding-ai-chat',
+    base: '/ai-duel',
     plugins: [
       react({
         plugins: [['@swc/plugin-styled-components', {}]],
