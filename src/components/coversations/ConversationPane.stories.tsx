@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ConversationPane } from './CoversationPane';
+import { ConversationPane } from './ConversationPane';
 import styled from 'styled-components';
 
 const StoryContainer = styled.div`

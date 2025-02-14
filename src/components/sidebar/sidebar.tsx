@@ -1,7 +1,7 @@
 import { Button } from '@radix-ui/themes';
 import { ReactElement, useState } from 'react';
 import styled from 'styled-components';
-import { APISettingsManager } from '../apiSettingsManager';
+import { APISettingsManager } from '../api-key-settings';
 
 const SidebarContainer = styled.div`
   display: flex;
