@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/feixie1980/ai-duel/compare/v1.0.4...v1.1.0) (2025-02-14)
+
+
+### Bug Fixes
+
+* Added plop js to generate component templates ([c6decb3](https://github.com/feixie1980/ai-duel/commit/c6decb3c214af2104e4a86289f75751657513bbd))
+
+
+### Features
+
+* Added a under construction page ([9c248a6](https://github.com/feixie1980/ai-duel/commit/9c248a69e43435dcba36b49bc01830d05b9879aa))
+* Added a under construction page ([75e1f6b](https://github.com/feixie1980/ai-duel/commit/75e1f6bf69180395173971876db7f1cfb344567a))
+
 ## [1.0.4](https://github.com/feixie1980/coding-ai-chat/compare/v1.0.3...v1.0.4) (2025-02-13)
 
 
