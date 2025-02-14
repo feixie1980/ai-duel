@@ -1,0 +1,17 @@
+import React from 'react';
+import styled from 'styled-components';
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
+
+const StyledWrapper = styled.div`
+  // Add your styles here
+`;
+
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({ className, children }: {{pascalCase name}}Props) => {
+  return (
+    <StyledWrapper className={className}>
+      {children}
+    </StyledWrapper>
+  );
+};
+
+export default {{pascalCase name}};

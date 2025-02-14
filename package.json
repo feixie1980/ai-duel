@@ -8,6 +8,7 @@
     "url": "https://github.com/feixie1980/coding-ai-chat.git"
   },
   "scripts": {
+    "generate-component": "plop",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -67,6 +68,7 @@
     "eslint-plugin-storybook": "^0.11.2",
     "globals": "^15.14.0",
     "jsdom": "^26.0.0",
+    "plop": "^4.0.1",
     "prettier": "^3.5.0",
     "semantic-release": "^24.2.2",
     "storybook": "^8.5.3",
