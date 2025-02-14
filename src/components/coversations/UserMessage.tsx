@@ -1,5 +1,5 @@
 import { Box } from '@radix-ui/themes';
-import { ChatMessage } from '../../API/conversationsSlice';
+import { ChatMessage } from '../../datastore/conversationsSlice';
 import styled from 'styled-components';
 
 const UserMessageBox = styled(Box)`

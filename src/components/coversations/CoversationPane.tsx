@@ -1,4 +1,4 @@
-import { ChatMessage } from '../../API/conversationsSlice';
+import { ChatMessage } from '../../datastore/conversationsSlice';
 import { Flex } from '@radix-ui/themes';
 import { UserMessage } from './UserMessage';
 import styled from 'styled-components';

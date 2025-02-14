@@ -8,8 +8,8 @@ import {
   TextField,
   Flex,
 } from '@radix-ui/themes';
-import { ServiceType } from '../../API/services';
-import { addAPIKey, selectAPIKeyByService } from '../../API/apiKeysSlice';
+import { ServiceType } from '../../datastore/services';
+import { addAPIKey, selectAPIKeyByService } from '../../datastore/apiKeysSlice';
 
 interface APISettingsManagerProps {
   open: boolean;

@@ -1,4 +1,4 @@
-import { ChatMessage } from '../../API/conversationsSlice';
+import { ChatMessage } from '../../datastore/conversationsSlice';
 import styled from 'styled-components';
 import { ChatBubbleIcon } from '@radix-ui/react-icons';
 import { Box } from '@radix-ui/themes';
