@@ -3,10 +3,13 @@
 exports[`UnderConstruction > renders correctly 1`] = `
 <div>
   <div
-    class="UnderConstruction__StyledWrapper-sc-74c0038-0 dccqXF"
+    class="UnderConstruction__StyledWrapper-sc-835800ff-0 bLSrNA"
   >
+    <h1>
+      Under construction, coming soon!
+    </h1>
     <img
-      class="UnderConstruction__UCImage-sc-74c0038-1 iihBbY"
+      class="UnderConstruction__UCImage-sc-835800ff-1 eOhRsx"
       src="/coding-ai-chat/src/assets/under_construction_beach.png"
     />
   </div>
