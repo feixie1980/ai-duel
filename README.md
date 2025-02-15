@@ -1,6 +1,8 @@
 # AI vs AI
 
-This is currently a WIP.
+This is currently a WIP, nothing much in the app content yet.
+
+Github page link: https://feixie1980.github.io/ai-duel/
 
 This is a React-based AI vs AI frontend application built with modern web technologies, showcasing many of the libraries, frameworks, and tools that have been part of the current web development and fast changing ecosystem!
 
@@ -103,11 +105,10 @@ TBD
 ### Core Libraries
 
 - **TypeScript** - Static typing and modern JavaScript features
+  - Coming from the world of Java to Javascript, I had thought I would had the shacle of types again with Typescript.  But guess what, it is not bad at all, and probably elimnate 80% of the data integrity and null/undefined run-time errors.  I am loving it now :D
 - **React** - UI component library
 - **Redux Toolkit** - State management
 - **Styled Components** - CSS-in-JS styling solution
-- **UUID** - Unique ID generation
-- **Crypto-js** - Cryptographic functions
 
 ### Component Library
 
@@ -117,17 +118,16 @@ TBD
 ### Testing Framework
 
 - **Vitest** - Unit and integration testing
-- **Testing Library** - React component testing
+- **React Testing Library** - React component testing
 - **JSDOM** - Browser environment simulation
-- **@storybook/test** - Storybook testing utilities
 
 ### Build Tools
 
 - **Vite** - Next generation frontend tooling
+  - The nice thing about Vite is that it comes out of box with many of the now expected features, such as HMR, code spliting with little or no configurations. Yes, the same thing can absolutely be done with Webpac & Babel, and other tools, but it is just a lot easier!
 - **SWC** - Super-fast JavaScript/TypeScript compiler
 - **ESLint** - Code quality and style checking
 - **Prettier** - Code formatting
-- **TypeScript ESLint** - TypeScript-specific linting
 
 ### Storybook
 
@@ -136,6 +136,11 @@ The project uses Storybook for component development and documentation. It inclu
 - Essential addons for controls, docs, and interactions
 - Chromatic integration for visual testing
 - Component stories with TypeScript support
+
+Storybook has become something that I would really missed if I don't have it. I use it for three essential things:
+1. Development - I can easily focus on building invidual components.
+2. Documention - I can easily generate documentations and testings of my component for other developers and my future self.  This is essential if we are developing any component libray.
+3. Testing - With some setup of Playwright or other e-2-e test framework, I can use storybook stories as my test cases, which greatly enhance the quality of my tests.
 
 ### Semantic Release
 
@@ -149,6 +154,8 @@ Commit types that trigger releases:
 - `refactor`: Patch release for code refactoring
 - `style`: Patch release for style changes
 - `BREAKING CHANGE`: Major release for breaking changes
+
+Sematic release is especially great to automate and make easy many of the chores during a release, such as version number update, updating version number in multiple places if needed(such as in package.json, your helm file, your docker file, and etc), change log generation, npm publishing, and many other. 
 
 ### CI/CD with GitHub Actions
 
