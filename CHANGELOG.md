@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/feixie1980/ai-duel/compare/v1.1.1...v1.1.2) (2025-02-18)
+
+
+### Bug Fixes
+
+* added loading spinner at the beginning ([c89a23d](https://github.com/feixie1980/ai-duel/commit/c89a23d1293a24bd5d655114023da5c9ad4f7431))
+
 ## [1.1.1](https://github.com/feixie1980/ai-duel/compare/v1.1.0...v1.1.1) (2025-02-14)
 
 
