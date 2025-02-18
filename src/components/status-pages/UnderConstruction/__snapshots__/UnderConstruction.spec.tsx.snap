@@ -3,15 +3,47 @@
 exports[`UnderConstruction > renders correctly 1`] = `
 <div>
   <div
-    class="UnderConstruction__StyledWrapper-sc-835800ff-0 bLSrNA"
+    class="UnderConstruction__StyledWrapper-sc-1d707661-0 ixARBy"
   >
     <h1>
       Under construction, coming soon!
     </h1>
     <img
-      class="UnderConstruction__UCImage-sc-835800ff-1 eOhRsx"
+      class="UnderConstruction__UCImage-sc-1d707661-1 aUSCn"
       src="/ai-duel/src/assets/under_construction_beach.png"
     />
+    <div
+      class="UnderConstruction__SpinnerOverlay-sc-1d707661-2 fjQfMP"
+    >
+      <span
+        class="rt-Spinner rt-r-size-3"
+      >
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+        <span
+          class="rt-SpinnerLeaf"
+        />
+      </span>
+    </div>
   </div>
 </div>
 `;
