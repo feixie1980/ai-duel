@@ -1,12 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ConversationPane } from './ConversationPane';
 import styled from 'styled-components';
+import 'reactflow/dist/style.css';
 
 const StoryContainer = styled.div`
-  width: 500px;
-  height: 300px;
-  overflow: scroll;
-  // border: 1px solid lightgray;
+  width: 800px;
+  height: 600px;
+  border: 1px solid var(--gray-6);
+  border-radius: 8px;
 `;
 
 const meta = {
@@ -18,11 +19,9 @@ const meta = {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <>
-        <StoryContainer>
-          <Story />
-        </StoryContainer>
-      </>
+      <StoryContainer>
+        <Story />
+      </StoryContainer>
     ),
   ],
 } satisfies Meta<typeof ConversationPane>;
@@ -95,13 +94,13 @@ export const MultipleMessages: Story = {
       },
       {
         id: '5',
-        content: 'How can it rain?  It is not a real world.',
+        content: 'How can it rain? It is not a real world.',
         from: 'user',
         status: 'completed',
       },
       {
         id: '6',
-        content: 'It is realy to me!',
+        content: 'It is real to me!',
         from: 'llm',
         status: 'completed',
       },
