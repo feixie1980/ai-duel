@@ -1,7 +1,7 @@
-import { ChatMessage } from '../../datastore/conversationsSlice';
+import { ChatMessage } from '../../../datastore/conversationsSlice';
 import { Flex } from '@radix-ui/themes';
-import { UserMessage } from './UserMessage';
-import { BotMessage } from './BotMessage';
+import UserMessage from '../UserMessage/UserMessage';
+import BotMessage from '../BotMessage/BotMessage';
 import ReactFlow, {
   Node,
   Edge,
@@ -127,7 +127,7 @@ export interface ConversationPaneProps {
   messages?: ChatMessage[];
 }
 
-export function ConversationPane(props: ConversationPaneProps) {
+export default function ConversationPane(props: ConversationPaneProps) {
   const { messages = [] } = props;
 
   // Create nodes from messages

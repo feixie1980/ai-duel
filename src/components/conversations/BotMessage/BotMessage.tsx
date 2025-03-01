@@ -1,7 +1,7 @@
-import { ChatMessage } from '../../datastore/conversationsSlice';
 import styled from 'styled-components';
 import { ChatBubbleIcon } from '@radix-ui/react-icons';
 import { Box } from '@radix-ui/themes';
+import { BotMessageProps } from './BotMessage.types';
 
 const BotMessageBox = styled.div`
   display: flex;
@@ -13,7 +13,8 @@ const BotMessageBox = styled.div`
   min-width: 80%;
 `;
 
-export function BotMessage({ message }: { message: ChatMessage }) {
+export default function BotMessage(props: BotMessageProps) {
+  const { message } = props;
   return (
     <BotMessageBox>
       <Box>

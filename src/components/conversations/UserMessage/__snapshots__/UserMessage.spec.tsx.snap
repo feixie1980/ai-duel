@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UserMessage > renders correctly 1`] = `
+<div>
+  <div
+    class="rt-Box UserMessage__UserMessageBox-sc-4b9563b2-0 imGPAl"
+  >
+    Hello World
+  </div>
+</div>
+`;

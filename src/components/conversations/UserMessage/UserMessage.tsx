@@ -1,6 +1,6 @@
 import { Box } from '@radix-ui/themes';
-import { ChatMessage } from '../../datastore/conversationsSlice';
 import styled from 'styled-components';
+import { UserMessageProps } from './UserMessage.types';
 
 const UserMessageBox = styled(Box)`
   align-self: flex-end;
@@ -9,6 +9,7 @@ const UserMessageBox = styled(Box)`
   border-radius: 8px;
 `;
 
-export function UserMessage({ message }: { message: ChatMessage }) {
+export default function UserMessage(props: UserMessageProps) {
+  const { message } = props;
   return <UserMessageBox>{message.content}</UserMessageBox>;
 }

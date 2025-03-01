@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ConversationPane } from './ConversationPane';
+import ConversationPane from './ConversationPane';
 import styled from 'styled-components';
 import 'reactflow/dist/style.css';
 
@@ -11,7 +11,7 @@ const StoryContainer = styled.div`
 `;
 
 const meta = {
-  title: 'Components/ConversationPane',
+  title: 'Components/conversations/ConversationPane',
   component: ConversationPane,
   parameters: {
     layout: 'centered',
